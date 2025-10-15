@@ -60,8 +60,8 @@ export default function Home() {
           <TestimonialCardTwo
             title="What Our Customers Say"
             testimonials={[
-              { id: "1", name: "Jane Doe", role: "Customer", testimonial: "The best bakery in town. The sourdough bread is a must-try.", rating: 5, imageSrc: "asset://hero", icon: Star },
-              { id: "2", name: "John Smith", role: "Food Critic", testimonial: "Bakery Bliss delivers top quality every time. Highly recommended!", rating: 5, imageSrc: "asset://hero", icon: Star }
+              { id: "1", name: "Jane Doe", role: "Customer", testimonial: "The best bakery in town. The sourdough bread is a must-try.", imageSrc: "asset://hero", icon: Star },
+              { id: "2", name: "John Smith", role: "Food Critic", testimonial: "Bakery Bliss delivers top quality every time. Highly recommended!", imageSrc: "asset://hero", icon: Star }
             ]}
           />
         </div>
