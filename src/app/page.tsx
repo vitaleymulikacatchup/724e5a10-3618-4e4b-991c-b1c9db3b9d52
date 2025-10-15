@@ -7,6 +7,7 @@ import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import { Star } from 'lucide-react';
 
 const assetMap = [
   { id: "hero", url: "https://images.pexels.com/photos/5377558/pexels-photo-5377558.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Warm autumn drink in a yellow mug with pumpkin and squash on a soft background." },
@@ -47,9 +48,9 @@ export default function Home() {
           <ProductCardTwo
             title="Our Delicious Range"
             products={[
-              { id: "1", brand: "Bakery Bliss", name: "Sourdough Bread", price: "$4.99", rating: 5, reviewCount: "150", imageSrc: "https://images.pexels.com/photos/34298914/pexels-photo-34298914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
-              { id: "2", brand: "Bakery Bliss", name: "Chocolate Croissant", price: "$2.99", rating: 4, reviewCount: "87", imageSrc: "https://images.pexels.com/photos/34298914/pexels-photo-34298914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
-              { id: "3", brand: "Bakery Bliss", name: "Blueberry Muffin", price: "$1.99", rating: 5, reviewCount: "200", imageSrc: "https://images.pexels.com/photos/34298914/pexels-photo-34298914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" }
+              { id: "1", brand: "Bakery Bliss", name: "Sourdough Bread", price: "$4.99", rating: 5, reviewCount: "150", imageSrc: "asset://products" },
+              { id: "2", brand: "Bakery Bliss", name: "Chocolate Croissant", price: "$2.99", rating: 4, reviewCount: "87", imageSrc: "asset://products" },
+              { id: "3", brand: "Bakery Bliss", name: "Blueberry Muffin", price: "$1.99", rating: 5, reviewCount: "200", imageSrc: "asset://products" }
             ]}
           />
         </div>
@@ -59,8 +60,8 @@ export default function Home() {
           <TestimonialCardTwo
             title="What Our Customers Say"
             testimonials={[
-              { id: "1", name: "Jane Doe", role: "Customer", testimonial: "The best bakery in town. The sourdough bread is a must-try.", icon: "Star" },
-              { id: "2", name: "John Smith", role: "Food Critic", testimonial: "Bakery Bliss delivers top quality every time. Highly recommended!", icon: "Star" }
+              { id: "1", name: "Jane Doe", role: "Customer", testimonial: "The best bakery in town. The sourdough bread is a must-try.", rating: 5, imageSrc: "asset://hero", icon: Star },
+              { id: "2", name: "John Smith", role: "Food Critic", testimonial: "Bakery Bliss delivers top quality every time. Highly recommended!", rating: 5, imageSrc: "asset://hero", icon: Star }
             ]}
           />
         </div>
@@ -71,7 +72,7 @@ export default function Home() {
             tag="Contact Us"
             title="Let's Get In Touch"
             description="Have any questions or feedback? We'd love to hear from you."
-            imageSrc="https://images.pexels.com/photos/34297248/pexels-photo-34297248.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            imageSrc="asset://contact"
             onSubmit={(email) => console.log(email)}
           />
         </div>
